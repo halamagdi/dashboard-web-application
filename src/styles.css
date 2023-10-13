@@ -1,0 +1,107 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+
+
+
+html {
+    font-family: 'Inter', sans-serif;
+    color: #222;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.isBold {
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+
+}
+
+.btn {
+    padding: 12px 22px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-flex;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: inherit;
+    border-style: none;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+
+}
+
+.btn:active {
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(2px);
+
+}
+
+
+.btn i {
+    margin-right: 6px;
+    margin-left: -3px;
+}
+
+.btn-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.btn-container .align-end{
+    margin-left: auto;
+}
+
+.textbox,
+textarea {
+    width: 100%;
+    font-size: 18px;
+    font-family: inherit;
+    padding: 14px 30px;
+    border-radius: 8px;
+    border-style: none;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.textbox:focus,
+.textarea:focus {
+    outline: 3px solid #81D4FA;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+::placeholder{
+    padding: 4px;
+}

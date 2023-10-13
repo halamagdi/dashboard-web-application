@@ -1,0 +1,15 @@
+<div class="add-wrapper container">
+    <h2 class="isBold">New Note</h2>
+
+    <form #form="ngForm" (ngSubmit)="addNoteSubmit(form)">
+        <input ngModel #titleField="ngModel" name="title" class="textbox" type="text" placeholder="Note Title..."
+            required>
+        <p *ngIf="showError && titleField.errors">please enter a note title</p>
+        <textarea ngModel name="content" class="textarea" placeholder="Note Content...."></textarea>
+        <div class="btn-container">
+            <a routerLink="../" class="btn">Cancel</a>
+            <button type="submit" class="btn align-end">Create</button>
+        </div>
+    </form>
+
+</div>

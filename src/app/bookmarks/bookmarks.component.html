@@ -1,0 +1,27 @@
+<div class="bookmark-wrapper">
+    <div class="container">
+        <div class="tile-container">
+            <a [href]="bookmark.url" target="_blank" class="bookmark-tile" *ngFor="let bookmark of bookmarks">
+                <div class="style-icon">
+                    <img [src]="bookmark.url + iconOrigin" alt="">
+                </div>
+
+                <p class="bookmark-text">{{bookmark.name}}</p>
+            </a>
+
+        </div>
+
+        <div class="btn-container">
+            <a routerLink="addbookmark" class="btn">
+                <i class="material-icons-outlined">add</i>
+                Add
+            </a>
+
+            <a routerLink="managebookmark" class="btn">
+                <i class="material-icons-outlined">settings</i>
+                Manage
+            </a>
+        </div>
+
+    </div>
+</div>

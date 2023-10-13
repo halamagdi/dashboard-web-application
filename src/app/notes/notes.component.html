@@ -1,0 +1,21 @@
+<div class="note-wrapper">
+    <div class="container">
+        <div class="note-list">
+            <div class="note-card" [routerLink]="[note.id]" *ngFor="let note of notes">
+                <div class="note-title">{{note.title}}</div>
+                <div class="note-content" *ngIf="note.content">{{note.content}} </div>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <a routerLink="addnote" class="btn">
+                <i class="material-icons-outlined">add</i>
+                Add
+            </a>
+
+        </div>
+
+    </div>
+
+
+</div>

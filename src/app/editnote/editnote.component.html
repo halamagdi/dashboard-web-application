@@ -1,0 +1,16 @@
+<div class="edit-wrapper container">
+    <h2 class="isBold">Edit Note</h2>
+
+    <form #form="ngForm" (ngSubmit)="editForm(form)" *ngIf="notes">
+        <input [ngModel]="notes.title" #titleField="ngModel" name="title" class="textbox" type="text"
+            placeholder="Note Title..." required minlength="3">
+        <p *ngIf="titleField.errors">please enter a note title</p>
+        <textarea [ngModel]="notes.content" name="content" class="textarea" placeholder="Note Content...."></textarea>
+        <div class="btn-container">
+            <a routerLink="../" class="btn">Cancel</a>
+            <button  type="button" class="btn" (click)="deleteNote()">Delete</button>
+            <button  type="submit" class="btn align-end">Save</button>
+        </div>
+    </form>
+
+</div>

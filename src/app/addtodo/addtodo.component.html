@@ -1,0 +1,16 @@
+
+
+<div class="add-wrapper container">
+    <h2 class="isBold">New Todo</h2>
+
+    <form #form="ngForm" (ngSubmit)="addTodoSubmit(form)">
+        <input ngModel #textField="ngModel" name="text" class="textbox" type="text" placeholder="Todo Text..."
+            required>
+        <p *ngIf="showError && textField.errors">please enter a text</p>
+        <div class="btn-container">
+            <a routerLink="../" class="btn">Cancel</a>
+            <button type="submit" class="btn align-end">Create</button>
+        </div>
+    </form>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="manage-wrapper container">
+
+    <div class="sidebar">
+        <p class="heading">Your Bookmarks</p>
+
+        <div class="sidebar-items" *ngFor="let bookmark of bookmarks">
+            <a class="sidebar-item" routerLinkActive="selected" [routerLink]='[bookmark.id]'>{{bookmark.name}}</a>
+
+        </div>
+
+        <div class="back">
+            <a routerLink="/bookmarks" class="material-icons-outlined">arrow_back</a>
+        </div>
+
+    </div>
+    <div class="content">
+
+        <router-outlet></router-outlet>
+
+
+    </div>
+
+</div>

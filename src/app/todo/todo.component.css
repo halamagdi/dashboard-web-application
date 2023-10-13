@@ -1,0 +1,88 @@
+.todo-wrapper {
+    height: 80%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.todo-item {
+    display: flex;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    border-radius: 25px;
+    margin-bottom: 15px;
+    padding: 10px 12px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.todo-text {
+    color: white;
+    margin-left: 15px;
+}
+
+.checkbox {
+    display: flex;
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 50%;
+    /* cursor: pointer; */
+
+}
+
+.checkbox i {
+    font-size: 18px;
+    opacity: 0;
+}
+
+.checkbox:hover {
+    border-color: transparent;
+    background: rgba(255, 255, 255, 0.5);
+
+}
+
+.todo-item.completed .todo-text {
+
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: line-through;
+
+
+}
+
+.todo-item.completed .checkbox {
+    background: #00B489;
+
+    border-color: transparent;
+}
+
+.todo-item.completed .checkbox i {
+    opacity: 1;
+}
+
+.btn-actions i {
+    font-size: 30px;
+    /* color: white; */
+}
+
+.btn-actions i:hover {
+    color: white;
+}
+
+.btn-actions {
+    margin-right: 7px;
+}
+
+.actions {
+    display: flex;
+    position: absolute;
+    right: 5px;
+    /* top: 5px; */
+    visibility: hidden;
+
+}
+
+.todo-item:hover .actions {
+    visibility: visible;
+
+}

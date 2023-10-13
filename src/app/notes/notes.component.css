@@ -1,0 +1,31 @@
+.note-wrapper {
+    overflow-y: auto;
+    height: 80%;
+}
+
+.note-card {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    color: white;
+    padding: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+
+
+}
+
+.note-card:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.note-title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.note-content {
+    margin-top: 7px;
+    color: rgba(255, 255, 255, 0.9);
+}
