@@ -1,4 +1,44 @@
-# App
+
+# Dashboard Web Application
+
+The Dashboard Web Application is a versatile platform that allows users to manage bookmarks, notes, and a todo list. The application is built using HTML5, CSS3, TypeScript, and Angular 16 framework. It provides CRUD operations (GET, POST, UPDATE, DELETE) for data management and utilizes local storage to persist user data.
+
+## Getting Started
+
+To set up and run the Dashboard Web Application locally, follow these steps:
+
+1. Clone the repository:
+
+```
+git clone https://github.com/halamagdi/dashboard-web-application.git
+```
+
+2. Install dependencies:
+
+```
+cd dashboard-web-application
+npm install
+```
+
+3. Run the application:
+
+```
+ng serve
+```
+
+4. Open your browser and navigate to `http://localhost:4200` to access the Dashboard Web Application.
+
+## Contributing
+
+Contributions to the Dashboard Web Application are welcome and encouraged. Feel free to submit bug reports, feature requests, or pull requests.
+
+Please ensure that your contributions adhere to the project's coding standards and follow best practices.
+
+## License
+
+The Dashboard Web Application is open-source software licensed under the [MIT License](LICENSE).
+
+## Acknowledgements
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
 
